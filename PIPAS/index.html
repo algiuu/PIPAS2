@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Dan Mencegah Stunting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css
+" rel="stylesheet">
+<link rel="shortcut icon" href="img/logo website cek dan cegah stunting dengan tema lembut dan sopan.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Metrophobic", sans-serif;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 0.1px solid black;
+        }
+        .judul {
+            display: flex;
+            gap: 5px;
+            margin: 0 20px 0;
+        }
+        .navigasi {
+            margin: 0 70px 0 0;
+        }
+        .navigasi a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px 0 20px;
+        }
+        .navigasi a:hover {
+            text-decoration: underline;
+            text-decoration-color: red;
+            transition: all 0.3s;
+            color: blue;
+        }
+        .isi {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            height: 30vh;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .sudmit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 69px;
+        }
+        .sudmit button {
+            width: 60%;
+            height: 40px;
+            background-color: #31B3C1;
+            border: white solid;
+            border-radius: 10px;
+        }
+
+        #About{
+            margin: 365px 0 12px 0;
+        }
+        /* Global styling for the content section */
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.section h2 {
+    font-size: 24px;
+    color: #000102;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Text styling */
+.section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* List styling */
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #0066cc;
+    font-size: 16px;
+    color: #555;
+}
+
+/* General content styling */
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.about2{
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #0066cc;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Team section styling */
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member {
+    width: 150px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member p {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.member a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 14px;
+}
+
+.member a:hover {
+    color: #004d99;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member {
+    width: 30%; /* Atur lebar sekitar 30% untuk tiga kolom per baris */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 179, 193); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+/* Styling untuk bagian utama */
+.task-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.task-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk container kartu */
+.role-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Styling umum untuk kartu */
+.card {
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Nama peran */
+.card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* Nama anggota */
+.card .name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Warna latar belakang sesuai peran */
+.frontend {
+    background-color: #4CAF50; /* Warna hijau untuk Front-end Developer */
+}
+
+.uiux {
+    background-color: #2196F3; /* Warna biru untuk UI/UX Designer */
+}
+
+.contentwriter {
+    background-color: #FF9800; /* Warna oranye untuk Content Writer */
+}
+
+.team-members img{
+    transition: transform 0.1s ease-in-out;
+}
+.team-members img:hover{
+    transform: translateY(-5px);
+}
+
+.about1{
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+    </style>
+    <!-- JavaScript -->
+
+
+</head>
+<body>
+    <nav>
+        <div class="judul">
+            <p style="color: rgb(15, 130, 118); font-size: 150%;">Cek & Cegah</p>
+            <p style="color: rgb(49, 179, 193); font-size: 150%;">Stunting</p>
+        </div>
+        <div class="navigasi">
+            <a href="#" style="font-size: 150%;">Home</a>
+            <a href="#About" style="font-size: 150%;">About</a>
+            <a href="#Contact" style="font-size: 150%;">Contact</a>
+        </div>
+    </nav>
+    <div class="isi">
+        <div class="baris-atas">
+            <div class="kotak1">
+                <p style="margin: 0 0 5px 0; font-size: 150%;">Tinggi Badan</p>
+                <input type="number" class="tinggiBadan"> cm
+            </div>
+            <div class="kotak2">
+                <p style="margin: 10px 0 5px 0; font-size: 150%;">Berat Badan</p>
+                <input type="number" class="BeratBadan"> kg
+            </div>
+        </div>
+        <div class="baris-bawah">
+            <div class="kotak3">
+                <p style="margin: 0 0 5px 0; font-size: 150%;">Jenis Kelamin</p>
+                <input type="text" class="JenisKelamin">
+            </div>
+            <div class="kotak4">
+                <p style="margin: 10px 0 5px 0; font-size: 150%;">Umur</p>
+                <input type="number" class="Umur"> bulan
+            </div>
+        </div>
+    </div>
+    <div class="sudmit">
+        <button class="tombol" onclick="Tombol()" style="cursor: pointer; " >Kalkulasi</button>
+    </div>
+
+
+    <section id="About">
+        <div class="section" id="pengertian-stunting">
+            <h2>Pengertian Stunting</h2>
+            <p>Stunting adalah gagal tumbuh akibat kurangnya asupan gizi, di mana dalam jangka pendek dapat menyebabkan terganggunya perkembangan otak, metabolisme, dan pertumbuhan fisik pada anak. Sementara, dalam jangka panjang, dampak stunting adalah sebagai berikut: Kesulitan belajar, penyakit jantung dan pembuluh darah.</p>
+        </div>
+    
+        <div class="section" id="ciri-stunting">
+            <h2>Ciri-Ciri Anak Mengalami Stunting</h2>
+            <ul>
+                <li>Tumbuh kembangnya lambat</li>
+                <li>Wajah tampak lebih muda dari anak seusianya</li>
+                <li>Berat badan tidak naik bahkan akan cenderung menurun</li>
+                <li>Kemampuan fokus dan memori belajarnya tidak baik</li>
+                <li>Anak cenderung lebih pendiam</li>
+                <li>Fase Pertumbuhan gigi pada anak melambat</li>
+                <li>Dalam jangka panjang, pada anak perempuan berpotensi telat menstruasi pertama</li>
+                <li>Anak lebih mudah terserang/terinfeksi berbagai penyakit</li>
+            </ul>
+        </div>
+
+        <div class="section" id="Cara-Mencegah-Stunting-pada-Anak">
+            <h2>Cara Mencegah Stunting pada Anak</h2>
+            <ul>
+                <li>Memberikan ASI eksklusif pada bayi hingga berusia 6 bulan</li>
+                <li>Memantau perkembangan anak dan membawa ke posyandu secara berkala</li>
+                <li>Mengkonsumsi secara rutin Tablet tambah Darah (TTD)</li>
+                <li>Memberikan MPASI yang begizi dan kaya protein hewani untuk bayi yang berusia diatas 6 bulan</li>
+            </ul>
+        </div>
+        
+    </section>
+    <section id="Contact">
+        <div class="task-section">
+            <h2>Pembagian Tugas</h2>
+            <div class="role-cards">
+                <!-- Card untuk Front-end Developer -->
+                <div class="card frontend">
+                    <h3>Front-end Developer</h3>
+                    <p class="name">M. Algifari S</p>
+                </div>
+                
+                <!-- Card untuk UI/UX Designer -->
+                <div class="card uiux">
+                    <h3>UI/UX Designer</h3>
+                    <p class="name">M. Zaky L</p>
+                </div>
+                <div class="card uiux">
+                    <h3>UI/UX Designer</h3>
+                    <p class="name">Sarip M</p>
+                </div>
+        
+                <!-- Card untuk Content Writer -->
+                <div class="card contentwriter">
+                    <h3>Content Writer</h3>
+                    <p class="name">Tania S.A</p>
+                </div>
+                <div class="card contentwriter">
+                    <h3>Content Writer</h3>
+                    <p class="name">Fitria R</p>
+                </div>
+                <div class="card contentwriter">
+                    <h3>Content Writer</h3>
+                    <p class="name">Shena E</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h2>Kelompok 4</h2>
+            <br>
+            <br>
+            <div class="team-members">
+                <div class="member">
+                    <img src="img/IMG-20240609-WA0003.jpg" alt="Nama Anggota">
+                    <p>Muhamad Alghifari S.</p>
+                    <a href="https://instagram.com/algirithm.id/" target="_blank">@algirithm.id</a>
+                </div>
+                <div class="member">
+                    <img src="img/IMG_5136.png" alt="Nama Anggota">
+                    <p>Muhammad Zaky L.</p>
+                    <a href="https://instagram.com/lazuardizaky" target="_blank">@lazuardizaky</a>
+                </div>
+                <div class="member">
+                    <img src="img/WhatsApp Image 2024-10-24 at 06.56.38.jpeg" alt="Nama Anggota">
+                    <p>Sarip Mudaim</p>
+                    <a href="https://instagram.com/" target="_blank">@SaripGKPunyaIG</a>
+                </div>
+                <div class="member">
+                    <img src="img/WhatsApp Image 2024-11-02 at 15.52.21.jpeg" alt="Nama Anggota">
+                    <p>Fitria Ramadhani</p>
+                    <a href="https://instagram.com/mpitcc_" target="_blank">@mpitcc_</a>
+                </div>
+                <div class="member">
+                    <img src="img/WhatsApp Image 2024-11-01 at 21.39.37.jpeg" alt="Nama Anggota">
+                    <p>Tania S.A</p>
+                    <a href="https://instagram.com/yieptaniaa_" target="_blank">@yieptaniaa_</a>
+                </div>
+                <div class="member">
+                    <img src="img/WhatsApp Image 2024-11-02 at 15.17.27.jpeg" alt="Nama Anggota">
+                    <p>Sheena Elfrieda</p>
+                    <a href="https://instagram.com/shendaa_18" target="_blank">@shendaa_18</a>
+                </div>
+
+                <!-- Tambahkan anggota lainnya sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+    <script src="dist/sweetalert2.all.min.js"></script>
+
+<script>
+    function Tombol() {
+        let tinggiBadan = parseFloat(document.querySelector(".tinggiBadan").value);
+        let BeratBadan = parseFloat(document.querySelector(".BeratBadan").value);
+        let Umur = parseInt(document.querySelector(".Umur").value);
+
+        if (Umur < 3 && tinggiBadan > 50 && BeratBadan > 3.2) {
+
+            Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+});
+
+}  else if (Umur < 3 && tinggiBadan < 50 && BeratBadan < 3.2) {
+    Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+
+}  else if (Umur < 6 && tinggiBadan > 55 && BeratBadan > 4) {
+
+    Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+});
+
+}  else if (Umur < 6 && tinggiBadan < 55 && BeratBadan < 4) {
+
+    Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+}  else if (Umur < 6 && tinggiBadan > 55 && BeratBadan > 4) {
+
+    Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+});
+
+}  else if (Umur < 9 && tinggiBadan < 60 && BeratBadan < 5) {
+
+    Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+
+}  else if (Umur < 9 && tinggiBadan > 60 && BeratBadan > 5) {
+
+    Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+});
+
+}  else if (Umur < 12 && tinggiBadan < 65 && BeratBadan < 6) {
+
+    Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+}  else if (Umur < 12 && tinggiBadan > 65 && BeratBadan > 6) {
+
+    Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+}  else if (Umur < 18 && tinggiBadan < 70 && BeratBadan < 7) {
+
+    Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+
+}  else if (Umur < 18 && tinggiBadan > 70 && BeratBadan > 7) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else if (Umur < 24 && tinggiBadan < 75 && BeratBadan < 8) {
+
+ Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+} else if (Umur < 24 && tinggiBadan > 75 && BeratBadan > 8) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else if (Umur < 30 && tinggiBadan < 80 && BeratBadan < 9) {
+
+ Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+} else if (Umur < 30 && tinggiBadan > 80 && BeratBadan > 9) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else if (Umur < 36 && tinggiBadan < 85 && BeratBadan < 10) {
+
+ Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+} else if (Umur < 36 && tinggiBadan > 85 && BeratBadan > 10) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else if (Umur < 42 && tinggiBadan < 90 && BeratBadan < 11) {
+
+ Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+} else if (Umur < 42 && tinggiBadan > 90 && BeratBadan > 11) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else if (Umur < 48 && tinggiBadan < 95 && BeratBadan < 12) {
+
+ Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+} else if (Umur < 48 && tinggiBadan > 95 && BeratBadan > 12) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else if (Umur < 50 && tinggiBadan < 100 && BeratBadan < 13) {
+
+ Swal.fire({
+  icon: "error",
+  title: "Anak Anda berpotensi stunting",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda berpotensi stunting",
+});
+} else if (Umur <= 50 && tinggiBadan > 100 && BeratBadan >= 13) {
+
+Swal.fire({
+  icon: "success",
+  title: "Anak Anda Normal",
+  text: "Anak Anda yang memiliki Tinggi badan yaitu " + tinggiBadan + " cm " + " Dan Memiliki Berat Badan " + BeratBadan + " kg " +" Di usia " + Umur + " bulan " +" Dan Hasilnya yaitu " + " Anak Anda Sangat Normal",
+}); 
+
+
+} else {
+
+alert("Data tidak valid");
+
+}
+
+    }
+</script>
+
+</body>
+</html>
